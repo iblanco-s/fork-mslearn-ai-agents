@@ -1,0 +1,5 @@
+Categoría,Costo
+Alojamiento, 674.56
+Transporte, 2301.00
+Comidas, 267.89
+Varios, 34.50

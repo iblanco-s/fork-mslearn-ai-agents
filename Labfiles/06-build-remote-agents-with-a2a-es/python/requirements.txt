@@ -1,0 +1,8 @@
+python-dotenv
+azure-identity
+a2a-sdk
+httpx
+requests
+fastapi
+uvicorn
+starlette
