@@ -6,32 +6,32 @@ echo "================================================"
 echo ""
 
 # Install Azure CLI
-echo "Installing Azure CLI..."
+echo "Instalando Azure CLI..."
 echo "------------------------------------------------"
 curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
 
 echo ""
-echo "Verifying Azure CLI installation..."
+echo "Verificando instalación do Azure CLI..."
 if command -v az &> /dev/null; then
-    echo "✓ Azure CLI is installed"
+    echo "✓ Azure CLI está instalado"
     az version
 else
-    echo "⚠ Azure CLI not found in PATH. Please install it manually or restart your terminal."
+    echo "⚠ Azure CLI no encontrado en PATH. Por favor, instálelo manualmente o reinicie el terminal."
 fi
 
 echo ""
 echo "------------------------------------------------"
 
 # Check if Python is installed
-echo "Checking Python installation..."
+echo "Verificando instalación do Python..."
 if command -v python3 &> /dev/null; then
     PYTHON_CMD=python3
-    echo "✓ Python3 found: $(python3 --version)"
+    echo "✓ Python3 encontrado: $(python3 --version)"
 elif command -v python &> /dev/null; then
     PYTHON_CMD=python
-    echo "✓ Python found: $(python --version)"
+    echo "✓ Python encontrado: $(python --version)"
 else
-    echo "✗ Python not found. Please install Python 3.8 or higher."
+    echo "✗ Python no encontrado. Por favor, instálelo manualmente o reinicie el terminal."
     exit 1
 fi
 
@@ -39,35 +39,35 @@ echo ""
 echo "------------------------------------------------"
 
 # Install Python dependencies
-echo "Installing Python dependencies..."
+echo "Instalando dependencias de Python..."
 echo ""
 
 if [ -f "requirements.txt" ]; then
-    echo "Installing from consolidated requirements.txt..."
+    echo "Instalando desde requirements.txt..."
     $PYTHON_CMD -m pip install --upgrade pip
     $PYTHON_CMD -m pip install -r requirements.txt
     
     if [ $? -eq 0 ]; then
         echo ""
-        echo "✓ All Python dependencies installed successfully!"
+        echo "✓ Todas las dependencias de Python instaladas correctamente!"
     else
         echo ""
-        echo "✗ Failed to install some dependencies. Please check the error messages above."
+        echo "✗ Fallo al instalar algunas dependencias. Por favor, compruebe los mensajes de error anteriores."
         exit 1
     fi
 else
-    echo "✗ requirements.txt not found in the current directory."
+    echo "✗ requirements.txt no encontrado en el directorio actual."
     exit 1
 fi
 
 echo ""
 echo "================================================"
-echo "Setup Complete!"
+echo "Setup Completado!"
 echo "================================================"
 echo ""
 echo "Next steps:"
-echo "1. Run 'az login' to authenticate with Azure"
-echo "2. Configure your .env files in the respective labfile directories"
-echo "3. Start working on the labs!"
+echo "1. Ejecutar 'az login' para autenticarse con Azure"
+echo "2. Configurar el archivo .env "
+echo "3. Empezar a trabajar en los laboratorios!"
 echo ""
 
