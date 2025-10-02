@@ -1,0 +1,8 @@
+python-dotenv
+azure-identity
+uvicorn
+httpx
+starlette
+sse-starlette
+fastapi
+
