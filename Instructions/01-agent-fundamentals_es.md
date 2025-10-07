@@ -8,7 +8,7 @@ lab:
 
 En este ejercicio, utilizarás el servicio de Agentes de IA de Azure en el portal de Azure AI Foundry para crear un agente de IA simple que asiste a los empleados con reclamaciones de gastos.
 
-Este ejercicio toma aproximadamente **30** minutos.
+Este ejercicio requiere de aproximadamente **30** minutos.
 
 > **Nota**: Algunas de las tecnologías utilizadas en este ejercicio están en vista previa o en desarrollo activo. Podrías experimentar algunos comportamientos inesperados, advertencias o errores.
 

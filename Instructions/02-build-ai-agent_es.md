@@ -6,11 +6,11 @@ lab:
 
 # Desarrollar un agente de IA
 
-En este ejercicio, utilizarás el Servicio de Agentes de IA de Azure para crear un agente simple que analiza datos y crea gráficos. El agente puede usar la herramienta integrada *Intérprete de Código* para generar dinámicamente cualquier código necesario para analizar datos.
+En este ejercicio, utilizarás el Servicio de Agentes de IA de Azure para crear un agente simple que analiza datos y crea gráficos. El agente puede usar la herramienta integrada *Code Interpreter* para generar dinámicamente cualquier código necesario para analizar datos.
 
 > **Consejo**: El código utilizado en este ejercicio está basado en el SDK de Azure AI Foundry para Python. Puedes desarrollar soluciones similares usando los SDKs para Microsoft .NET, JavaScript y Java. Consulta [Bibliotecas de cliente del SDK de Azure AI Foundry](https://learn.microsoft.com/azure/ai-foundry/how-to/develop/sdk-overview) para más detalles.
 
-Este ejercicio debería tomar aproximadamente **30** minutos para completar.
+Este ejercicio debería requerir aproximadamente de **30** minutos para completarlo.
 
 > **Nota**: Algunas de las tecnologías utilizadas en este ejercicio están en vista previa o en desarrollo activo. Podrías experimentar algunos comportamientos inesperados, advertencias o errores.
 
